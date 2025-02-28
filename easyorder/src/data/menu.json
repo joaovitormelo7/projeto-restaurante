@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza de Calabresa",
+    "description": "Deliciosa pizza com calabresa, queijo e orégano.",
+    "price": 39.9,
+    "image": "/images/pizza-calabresa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hambúrguer Artesanal",
+    "description": "Pão brioche, carne 180g, queijo cheddar e molho especial.",
+    "price": 29.9,
+    "image": "/images/hamburguer-artesanal.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Lasanha à Bolonhesa",
+    "description": "Lasanha com molho bolonhesa e muito queijo.",
+    "price": 45.0,
+    "image": "/images/lasanha.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Suco Natural de Laranja",
+    "description": "Suco feito na hora, 100% natural.",
+    "price": 9.5,
+    "image": "/images/suco-laranja.jpg"
+  }
+]
