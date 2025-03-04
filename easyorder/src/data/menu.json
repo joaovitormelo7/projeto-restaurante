@@ -3,126 +3,108 @@
     "id": 1,
     "name": "Filé de tilápia",
     "description": "Filé de tilápia (400g)",
-    "price": 45.0,
-    "image": "/images/pizza-calabresa.jpg"
+    "price": 45.0
   },
   {
     "id": 2,
     "name": "Filé de tilápia c/ Fritas",
     "description": "Filé de tilápia (400g) com fritas (400g)",
-    "price": 70.0,
-    "image": "/images/hamburguer-artesanal.jpg"
+    "price": 70.0
   },
   {
     "id": 3,
     "name": "Bolinho de tilápia",
     "description": "Bolinho de tilápia (15 unid)",
-    "price": 25.0,
-    "image": "/images/lasanha.jpg"
+    "price": 25.0
   },
   {
     "id": 4,
     "name": "Ceviche",
     "description": "Filé de tilápia (200g) com cebola roxa, tomate, acabaxi e cheiro verde",
-    "price": 30.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 30.0
   },
   {
     "id": 5,
     "name": "Fritas Completa",
     "description": "Batata (400g), bacon e mussarela",
-    "price": 35.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 35.0
   },
   {
     "id": 6,
     "name": "Fritas Vessile",
     "description": "Batata crinkle (400g), com cupim desfiado e molho especial da casa",
-    "price": 70.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 70.0
   },
   {
     "id": 7,
     "name": "Contra filé c/ mandioca",
     "description": "Contra filé (400g) com uma deliciosa mandioca, acompanhado de um delicioso vinagrete e molho",
-    "price": 70.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 70.0
   },
   {
     "id": 8,
     "name": "Contra filé c/ fritas",
     "description": "Contra filé (400g) com fritas, acompanhado de um delicioso molho da casa",
-    "price": 70.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 70.0
   },
   {
     "id": 9,
     "name": "Almôndega com Mandioca",
     "description": "Almôndega (400g) acompanhada com uma deliciosa mandioca cozida",
-    "price": 55.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 55.0
   },
   {
     "id": 10,
     "name": "Parmegiana",
     "description": "Isca de filé em tiras (400g) empanadas, ao molho vermelho com tomates em cubo e mussarela",
-    "price": 85.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 85.0
   },
   {
     "id": 11,
     "name": "Figado c/ jiló",
     "description": "Figado (400g) com jiló em rodelas",
-    "price": 50.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 50.0
   },
   {
     "id": 12,
     "name": "Vessile Especial",
     "description": "Cupim suculento desfiado (400g) com batata rústica (200g) e mussarela, acompanhado de um delicioso molho",
-    "price": 65.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 65.0
   },
   {
     "id": 13,
     "name": "Calabresa Acebolada",
     "description": "Calabresa (200g) com muita cebola",
-    "price": 35.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 35.0
   },
   {
     "id": 14,
     "name": "Disco de Costela com Cheedar",
     "description": "Delicioso disquinho de costela (400g) recheado com cheeder cremoso e servido com molho Vessile",
-    "price": 50.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 50.0
   },
   {
     "id": 15,
     "name": "Tábua Vessile",
     "description": "Tomate, pepino, salame, provolone, mussarela, presunto, ovo de cordona, azeitona, palmito",
-    "price": 50.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 50.0
   },
   {
     "id": 16,
     "name": "Feijão",
     "description": "Bacon, calabresa, mussarela, ovo de cordona, torresmo, torrada e cheiro verde",
-    "price": 15.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 15.0
   },
   {
     "id": 17,
     "name": "Mandioca",
     "description": "Frango, bacon, calabresa, mussarela, ovo de codorna, torresmo, torrada e cheiro verde",
-    "price": 15.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 15.0
   },
   {
     "id": 18,
     "name": "Feijão",
     "description": "Bacon, calabresa, mussarela, ovo de cordona, torresmo, torrada e cheiro verde",
-    "price": 15.0,
-    "image": "/images/suco-laranja.jpg"
+    "price": 15.0
   }
 ]
