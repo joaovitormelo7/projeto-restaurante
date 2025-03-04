@@ -37,12 +37,14 @@ const CheckoutButton = styled.button`
   }
 `;
 
-const CartPage = ({ carItems }) => {
+const CartPage = ({ cartItems }) => {
   const navigate = useNavigate();
 
   const handleCheckout = () => {
+    if (cartItems.length === 0) return;
+
     const message = encodeURIComponent(
-      `Olá, gostaria de fazer um pedido: \n\n${carItems
+      `Olá, gostaria de fazer um pedido: \n\n${cartItems
         .map((item) => `- ${item.name}: R$${item.price.toFixed(2)}`)
         .join(
           "\n",
@@ -65,8 +67,13 @@ const CartPage = ({ carItems }) => {
           </CartItem>
         ))
       )}
+      {cartItems.length > 0 && (
+        <CheckoutButton onClick={handleCheckout}>
+          Finalizar Pedido
+        </CheckoutButton>
+      )}
     </CartContainer>
   );
 };
 
-export default Cart;
+export default CartPage;
