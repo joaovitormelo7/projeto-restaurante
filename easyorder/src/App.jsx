@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 //import Banner from "./components/Banner";
 import Menu from "./components/Menu";
-//import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 const AppContainer = styled.div`
@@ -43,6 +43,7 @@ const App = () => {
           <Menu addToCart={addToCart} />
         </Content>
       </MainContainer>
+      <Footer />
     </AppContainer>
   );
 };
