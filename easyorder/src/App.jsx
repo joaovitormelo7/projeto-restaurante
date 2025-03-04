@@ -5,6 +5,7 @@ import SideBar from "./components/SideBar";
 //import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
+import Cart from "./components/Cart";
 import { useState } from "react";
 
 const AppContainer = styled.div`
@@ -33,6 +34,10 @@ const App = () => {
     setCartItems([...cartItems, item]);
   };
 
+  const removeFromCart = (index) => {
+    setCartItems(cartItems.filter((_, i) => i !== index));
+  };
+
   return (
     <AppContainer>
       <GlobalStyles />
@@ -42,6 +47,7 @@ const App = () => {
         <Content>
           <Menu addToCart={addToCart} />
         </Content>
+        <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       </MainContainer>
       <Footer />
     </AppContainer>
