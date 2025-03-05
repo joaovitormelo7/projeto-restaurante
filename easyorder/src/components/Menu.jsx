@@ -42,7 +42,6 @@ const Menu = ({ addToCart }) => {
     <MenuContainer>
       {menuItems.map((item) => (
         <Card key={item.id}>
-          <Image src={item.image} alt={item.name} />
           <h3>{item.name}</h3>
           <p>{item.description}</p>
           <p>R$ {item.price.toFixed(2)}</p>
