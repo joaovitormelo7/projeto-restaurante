@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
-import SideBar from "./components/SideBar";
 import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
@@ -45,7 +44,6 @@ const App = () => {
           path="/"
           element={
             <MainContainer>
-              <SideBar />
               <Content>
                 <Banner text="Peça sua refeição favorita com facilidade!" />
                 <Menu addToCart={addToCart} />

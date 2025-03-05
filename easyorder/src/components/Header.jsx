@@ -1,18 +1,20 @@
 import styled from "styled-components";
+import logomarca from "../assets/image/logomarca.jpeg";
 
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
-  background: #ff5722;
+  background: #000000;
   color: white;
-  font-size: 24px;
-  font-weight: bold;
+  width: 100%;
 `;
 
-const Logo = styled.div`
-  font-size: 28px;
+const Logo = styled.img`
+  height: 180px;
+  width: 200px;
+  max-width: 350px;
 `;
 
 const Nav = styled.nav`
@@ -32,9 +34,9 @@ const Nav = styled.nav`
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>EasyOrder</Logo>
+      <Logo src={logomarca} alt="Vessile Restaurante" />
       <Nav>
-        <a href="#">Home</a>
+        <a href="#">Página Inicial</a>
         <a href="#">Cardápio</a>
         <a href="#">Contato</a>
       </Nav>

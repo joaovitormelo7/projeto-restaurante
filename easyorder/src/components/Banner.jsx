@@ -3,7 +3,7 @@ import styled from "styled-components";
 const BannerContainer = styled.div`
   width: 100%;
   height: 200px;
-  background: url("/images/banner.jpg") center/cover no repeat;
+  background: url("assets/image/banner.jpg") center/cover no repeat;
   display: flex;
   align-items: center;
   justify-content: center;
