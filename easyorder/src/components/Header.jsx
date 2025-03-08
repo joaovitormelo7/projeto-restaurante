@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import logomarca from "../assets/image/logomarca.jpeg";
+import { Link } from "react-router-dom";
 
 const HeaderContainer = styled.header`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 16px 32px;
   background: #000000;
@@ -13,8 +14,9 @@ const HeaderContainer = styled.header`
 
 const Logo = styled.img`
   height: 180px;
-  width: 200px;
+  width: auto;
   max-width: 350px;
+  margin-bottom: 16px;
 `;
 
 const Nav = styled.nav`
@@ -36,9 +38,8 @@ const Header = () => {
     <HeaderContainer>
       <Logo src={logomarca} alt="Vessile Restaurante" />
       <Nav>
-        <a href="#">Página Inicial</a>
-        <a href="#">Cardápio</a>
-        <a href="#">Contato</a>
+        <Link to="/">Página Inicial</Link>
+        <Link to="/contato">Contato</Link>
       </Nav>
     </HeaderContainer>
   );

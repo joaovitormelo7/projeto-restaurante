@@ -7,27 +7,37 @@ const MenuContainer = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: calc(100vh - 300px - 80px);
+  background: #fff;
+  padding: 40px 5%;
 `;
 
 const FilterButtons = styled.div`
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: flex;
-  gap: 8px;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const Card = styled.div`
   background: #fff;
-  border-radius: 8px;
-  padding: 16px;
-  width: 260px;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  } 
 `;
 
 const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   width: 100%;
 `;
@@ -36,13 +46,14 @@ const Button = styled.button`
   background: #121212;
   color: #fff;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 16px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: background 0.3s;
+  font-size: 16px;
 
   &:hover {
-    background: #e64a19;
+    background: #484d50;
   }
 `;
 
@@ -69,7 +80,7 @@ const Menu = ({ addToCart }) => {
           <Card key={item.id}>
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p>R$ {item.price.toFixed(2)}</p>
+            <p><strong>R$ {item.price.toFixed(2)}</strong></p>
             <Button onClick={() => addToCart(item)}>
               Adicionar ao Carrinho
             </Button>
