@@ -10,6 +10,7 @@ width: 100%;
 min-height: 100vh;
 background: #fff;
 padding: 40px 5%;
+text-align: center;
 `;
 
 const ContactTitle = styled.h2`
@@ -25,10 +26,16 @@ margin: 8px 0;
 `;
 
 const MapaContainer = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 width: 100%;
 max-width: 600px;
 height: 350px;
-margin-top: 20px;
+margin-top: 20px auto;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+overflow: hidden;
 `;
 
 const PaginaContato = () => {
