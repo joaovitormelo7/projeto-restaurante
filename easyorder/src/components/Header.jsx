@@ -6,14 +6,16 @@ const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 32px;
+  padding: 16px 0;
   background: #000000;
   color: white;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
 `;
 
 const Logo = styled.img`
-  height: 180px;
+  height: 280px;
   width: auto;
   max-width: 350px;
   margin-bottom: 16px;

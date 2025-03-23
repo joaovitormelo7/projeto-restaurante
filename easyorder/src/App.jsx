@@ -2,34 +2,40 @@ import { styled } from "styled-components";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
-import Banner from "./components/Banner";
+//import Banner from "./components/Banner";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import CartPage from "./components/CartPage";
 import { useState } from "react";
 
 const AppContainer = styled.div`
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
+  align-items: center;
 `;
 
 const Content = styled.section`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
+  align-items: center;
 `;
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
-  const navigate = useNavigate();
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
@@ -45,7 +51,6 @@ const App = () => {
           element={
             <MainContainer>
               <Content>
-                <Banner text="Peça sua refeição favorita com facilidade!" />
                 <Menu addToCart={addToCart} />
               </Content>
             </MainContainer>

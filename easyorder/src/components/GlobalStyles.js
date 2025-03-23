@@ -2,17 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100vw;
+      height: 100%;
+      overflow-x: hidden;
+    }
 
-  body {
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-  }
 
   a {
     text-decoration: none;
