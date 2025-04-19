@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
-//import Banner from "./components/Banner";
+import CheckoutPage from "./components/CheckOut";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import CartPage from "./components/CartPage";
@@ -57,6 +57,10 @@ const App = () => {
           }
         />
         <Route path="/carrinho" element={<CartPage cartItems={cartItems} />} />
+        <Route
+          path="/finalizar"
+          element={<CheckoutPage cartItems={cartItems} />}
+        />
       </Routes>
       <Footer />
     </AppContainer>
