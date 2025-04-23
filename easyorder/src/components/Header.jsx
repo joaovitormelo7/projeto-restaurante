@@ -41,7 +41,7 @@ const Header = () => {
       <Logo src={logomarca} alt="Vessile Restaurante" />
       <Nav>
         <Link to="/">Página Inicial</Link>
-        <Link to="/contato">Contato</Link>
+        <Link to="/contato">Sobre Nós</Link>
       </Nav>
     </HeaderContainer>
   );

@@ -31,7 +31,7 @@ const Card = styled.div`
 
   &:hover {
     transform: scale(1.05);
-  } 
+  }
 `;
 
 const CardContainer = styled.div`
@@ -57,21 +57,30 @@ const Button = styled.button`
   }
 `;
 
-const Menu = ({ addToCart }) => {
-  const [category, setCategory] = useState("all");
+const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
-  const categories = ["Cardápio Completo", "Porções", "Bebidas", "Especiais"];
+const Menu = ({ addToCart }) => {
+  const [category, setCategory] = useState("todas");
+
+  const categories = [
+    "todas",
+    ...new Set(menuItems.map((item) => item.category.toLowerCase())),
+  ];
 
   const filteredItems =
-    category === "Cardápio Completo"
+    category === "todas"
       ? menuItems
-      : menuItems.filter((item) => item.category === category);
+      : menuItems.filter((item) => item.category.toLowerCase() === category);
   return (
     <MenuContainer>
       <FilterButtons>
         {categories.map((cat) => (
-          <Button key={cat} onClick={() => setCategory(cat)}>
-            {cat.charAt(0).toUpperCase() + cat.slice(1)}
+          <Button
+            key={cat}
+            onClick={() => setCategory(cat)}
+            style={{ background: cat === category ? "#484d50" : "#121212" }}
+          >
+            {capitalize(cat)}
           </Button>
         ))}
       </FilterButtons>
@@ -80,7 +89,9 @@ const Menu = ({ addToCart }) => {
           <Card key={item.id}>
             <h3>{item.name}</h3>
             <p>{item.description}</p>
-            <p><strong>R$ {item.price.toFixed(2)}</strong></p>
+            <p>
+              <strong>R$ {item.price.toFixed(2)}</strong>
+            </p>
             <Button onClick={() => addToCart(item)}>
               Adicionar ao Carrinho
             </Button>
