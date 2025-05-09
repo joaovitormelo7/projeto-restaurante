@@ -16,7 +16,7 @@ Foi desenvolvido inicialmente para um restaurante de garagem, com muito amor e f
 🛠️ Tecnologias utilizadas
 React.js
 
-Vite (provavelmente configurado ou pronto para ser configurado)
+Vite 
 
 Styled-Components
 
