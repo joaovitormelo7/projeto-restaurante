@@ -66,7 +66,7 @@ O projeto estará disponível em http://localhost:5173/ (ou o que o Vite indicar
 
  Adicionar upload de fotos para cada produto do cardápio.
 
- Página de agradecimento após o pedido ser enviado.
+ Pop up de agradecimento após o pedido ser enviado.
 
  Melhorar o sistema de confirmação de pedido antes do envio.
 
