@@ -45,7 +45,7 @@ bash
 Copiar
 Editar
 # Clone o repositório
-git clone https://github.com/joaovitormelo7/easyorder.git
+git clone
 
 # Acesse a pasta
 cd easyorder
