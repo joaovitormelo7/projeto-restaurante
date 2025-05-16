@@ -1,11 +1,12 @@
 import { styled } from "styled-components";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
-import CheckoutPage from "./components/CheckOut";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import CartPage from "./components/CartPage";
+import CartIcon from "./components/CartIcon";
+import PaginaContato from "./pages/PaginaContato";
 import { useState } from "react";
 
 const AppContainer = styled.div`
@@ -38,13 +39,23 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
+    const existingItem = cartItems.find((i) => i.id === item.id);
+
+    if (existingItem) {
+      const updatedCart = cartItems.map((i) =>
+        i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+      );
+      setCartItems(updatedCart);
+    } else {
+      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+    }
   };
 
   return (
     <AppContainer>
       <GlobalStyles />
       <Header />
+      <CartIcon cartItems={cartItems} />
       <Routes>
         <Route
           path="/"
@@ -56,14 +67,34 @@ const App = () => {
             </MainContainer>
           }
         />
-        <Route path="/carrinho" element={<CartPage cartItems={cartItems} />} />
         <Route
-          path="/finalizar"
-          element={<CheckoutPage cartItems={cartItems} />}
+          path="/carrinho"
+          element={<CartPage cartItems={cartItems} />}
+        />
+        <Route
+          path="/contato"
+          element={
+            <MainContainer>
+              <Content>
+                <PaginaContato />
+              </Content>
+            </MainContainer>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <MainContainer>
+              <Content>
+                <h1>Página não encontrada</h1>
+              </Content>
+            </MainContainer>
+          }
         />
       </Routes>
       <Footer />
     </AppContainer>
   );
 };
+
 export default App;

@@ -5,14 +5,16 @@ const CartButton = styled.button`
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #ff5722;
+  background: black;
   color: white;
   border: none;
   padding: 12px 16px;
-  border-radius: 50%;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+
   &:hover {
     background: #e64a19;
   }

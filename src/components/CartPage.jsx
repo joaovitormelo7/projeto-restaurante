@@ -1,78 +1,202 @@
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const CartContainer = styled.div`
-  max-width: 600px;
-  margin: 20px auto;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
+const Page = styled.div`
+  background: #f5f5f5;
+  color: #f5f5f5;
+  min-height: 100vh;
+  padding: 40px 5% 120px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 `;
 
-const CartTitle = styled.h2`
+const Box = styled.div`
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  flex: 1 1 350px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+`;
+
+const Title = styled.h2`
+  font-size: 22px;
+  margin-bottom: 20px;
   text-align: center;
-  color: #ff5722;
+  color: #ffffff;
 `;
 
-const CartItem = styled.div`
+const Item = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
 `;
 
-const CheckoutButton = styled.button`
+const Total = styled.div`
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+`;
+
+const Frete = styled.p`
+  margin-top: 6px;
+  font-size: 13px;
+  color: #8aff8a;
+`;
+
+const Label = styled.label`
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+`;
+
+const Input = styled.input`
   width: 100%;
-  background: #ff5722;
-  color: white;
-  border: none;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+`;
+
+const Select = styled.select`
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+`;
+
+const Button = styled.button`
+  width: 100%;
   padding: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 16px;
+  transition: background 0.2s;
+
   &:hover {
-    background: #e64a19;
+    background-color: #e4e4e4;
   }
 `;
 
+const Empty = styled.p`
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+`;
+
 const CartPage = ({ cartItems }) => {
-  const navigate = useNavigate();
+  const [nome, setNome] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [endereco, setEndereco] = useState("");
+  const [pagamento, setPagamento] = useState("Dinheiro");
 
-  const handleCheckout = () => {
-    if (cartItems.length === 0) return;
+  const total = cartItems.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  ).toFixed(2);
 
-    const message = encodeURIComponent(
-      `Olá, gostaria de fazer um pedido: \n\n${cartItems
-        .map((item) => `- ${item.name}: R$${item.price.toFixed(2)}`)
-        .join(
-          "\n",
-        )}\n\nTotal: R$${cartItems.reduce((total, item) => total + item.price, 0).toFixed(2)}`,
-    );
-    window.location.href = `https://wa.me/34991623892?text=${message}`;
+  const handleSend = () => {
+    if (!nome || !telefone || !endereco) {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    const itens = cartItems
+      .map(
+        (item) =>
+          `- ${item.name} (x${item.quantity}): R$ ${(item.price * item.quantity).toFixed(2)}`
+      )
+      .join("\n");
+
+    const mensagem = encodeURIComponent(`
+🍔 *Pedido Vessile Lanches*
+
+🧾 *Itens:*
+${itens}
+
+💵 *Total:* R$ ${total}
+🚚 *Frete:* Grátis
+
+🙋 *Nome:* ${nome}
+📞 *Telefone:* ${telefone}
+📍 *Endereço:* ${endereco}
+💳 *Pagamento:* ${pagamento}
+    `);
+
+    window.location.href = `https://wa.me/34991623892?text=${mensagem}`;
   };
 
   return (
-    <CartContainer>
-      <CartTitle>Seu carrinho</CartTitle>
-      {cartItems.length === 0 ? (
-        <p>O carrinho está vazio</p>
-      ) : (
-        cartItems.map((item, index) => (
-          <CartItem key={index}>
-            <span>
-              {item.name} - R$ {item.price.toFixed(2)}
-            </span>
-          </CartItem>
-        ))
-      )}
-      {cartItems.length > 0 && (
-        <CheckoutButton onClick={handleCheckout}>
-          Finalizar Pedido
-        </CheckoutButton>
-      )}
-    </CartContainer>
+    <Page>
+      <Box>
+        <Title>Resumo do Pedido</Title>
+        {cartItems.length === 0 ? (
+          <Empty>O carrinho está vazio</Empty>
+        ) : (
+          <>
+            {cartItems.map((item, index) => (
+              <Item key={index}>
+                <span>{item.name} (x{item.quantity})</span>
+                <span>R$ {(item.price * item.quantity).toFixed(2)}</span>
+              </Item>
+            ))}
+            <Total>Total: R$ {total}</Total>
+            <Frete>Frete: Grátis</Frete>
+          </>
+        )}
+      </Box>
+
+      <Box>
+        <Title>Seus Dados</Title>
+        <Label>Nome</Label>
+        <Input
+          placeholder="Nome completo"
+          value={nome}
+          onChange={(e) => setNome(e.target.value)}
+        />
+
+        <Label>Telefone</Label>
+        <Input
+          placeholder="(xx) xxxxx-xxxx"
+          value={telefone}
+          onChange={(e) => setTelefone(e.target.value)}
+        />
+
+        <Label>Endereço</Label>
+        <Input
+          placeholder="Rua, nº, Bairro"
+          value={endereco}
+          onChange={(e) => setEndereco(e.target.value)}
+        />
+
+        <Label>Pagamento</Label>
+        <Select
+          value={pagamento}
+          onChange={(e) => setPagamento(e.target.value)}
+        >
+          <option>Cartão de Crédito</option>
+          <option>Cartão de Débito</option>
+          <option>Dinheiro</option>
+          <option>Pix</option>
+        </Select>
+
+        <Button onClick={handleSend}>Enviar Pedido pelo WhatsApp</Button>
+      </Box>
+    </Page>
   );
 };
 

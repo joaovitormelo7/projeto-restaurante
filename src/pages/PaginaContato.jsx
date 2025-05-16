@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 const PageContainer = styled.div`
   max-width: 800px;
@@ -43,48 +41,44 @@ const MapaContainer = styled.div`
 
 const PaginaContato = () => {
   return (
-    <>
-      <Header />
-      <PageContainer>
-        {/* Seção SOBRE NÓS */}
-        <Section>
-          <Title>Sobre Nós</Title>
-          <Text>
-            O Vessile Lanches e Sabores nasceu em uma garagem, mas com um
-            propósito gigante: oferecer refeições saborosas, feitas com muito
-            carinho e dedicação. Aqui, cada lanche, porção ou bebida é preparado
-            com ingredientes de qualidade e aquele toque caseiro que conquista.
-            <br />
-            <br />
-            Somos pequenos no espaço, mas grandes no cuidado com cada detalhe.
-            Do atendimento à entrega, tudo é feito com amor — e isso faz toda a
-            diferença no sabor.
-            <br />
-            <br />
-            <strong>Vessile: onde simplicidade e sabor se encontram ❤️</strong>
-          </Text>
-        </Section>
+    <PageContainer>
+      {/* Seção SOBRE NÓS */}
+      <Section>
+        <Title>Sobre Nós</Title>
+        <Text>
+          O Vessile Lanches e Sabores nasceu em uma garagem, mas com um
+          propósito gigante: oferecer refeições saborosas, feitas com muito
+          carinho e dedicação. Aqui, cada lanche, porção ou bebida é preparado
+          com ingredientes de qualidade e aquele toque caseiro que conquista.
+          <br />
+          <br />
+          Somos pequenos no espaço, mas grandes no cuidado com cada detalhe.
+          Do atendimento à entrega, tudo é feito com amor — e isso faz toda a
+          diferença no sabor.
+          <br />
+          <br />
+          <strong>Vessile: onde simplicidade e sabor se encontram ❤️</strong>
+        </Text>
+      </Section>
 
-        {/* Seção CONTATO */}
-        <Section>
-          <Title>Entre em Contato</Title>
-          <Text>Telefone: (34) 99829-1261</Text>
-          <Text>Instagram: @vessilelanches</Text>
-          <MapaContainer>
-            <iframe
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              style={{ border: 0 }}
-              src="https://www.google.com/maps?q=-19.3181174,-46.0362715&hl=pt-br&z=16&output=embed"
-              allowFullScreen
-              title="Localização do Vessile"
-            ></iframe>
-          </MapaContainer>
-        </Section>
-      </PageContainer>
-      <Footer />
-    </>
+      {/* Seção CONTATO */}
+      <Section>
+        <Title>Entre em Contato</Title>
+        <Text>Telefone: (34) 99829-1261</Text>
+        <Text>Instagram: @vessilelanches</Text>
+        <MapaContainer>
+          <iframe
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            style={{ border: 0 }}
+            src="https://www.google.com/maps?q=-19.3181174,-46.0362715&hl=pt-br&z=16&output=embed"
+            allowFullScreen
+            title="Localização do Vessile"
+          ></iframe>
+        </MapaContainer>
+      </Section>
+    </PageContainer>
   );
 };
 

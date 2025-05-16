@@ -42,6 +42,7 @@ const Header = () => {
       <Nav>
         <Link to="/">Página Inicial</Link>
         <Link to="/contato">Sobre Nós</Link>
+        <Link to="/carrinho">Carrinho</Link>
       </Nav>
     </HeaderContainer>
   );
