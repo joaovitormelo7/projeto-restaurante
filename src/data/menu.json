@@ -118,14 +118,17 @@
     "price": 15.0,
     "category": "caldos"
   },
-
   {
     "id": 20,
     "name": "Monte sua Massa",
     "description": "Escolha o tipo de massa, ingredientes e molho",
     "price": 35.0,
     "category": "massas",
-    "massas": ["Fettuccine", "Penne", "Espaguete"],
+    "massas": [
+      "Fettuccine",
+      "Penne",
+      "Espaguete"
+    ],
     "ingredientes": [
       "Bacon",
       "Calabresa",
@@ -137,8 +140,71 @@
       "Mussarela",
       "Presunto"
     ],
-    "molhos": ["Branco", "Bolonhesa"],
-    "temperos": ["Pimenta Calabresa", "Cebola", "Orégano", "Cheiro Verde"],
-    "adicional": ["Bacon", "Calabresa", "Frango", "Mussarela", "Milho"]
+    "molhos": [
+      "Branco",
+      "Bolonhesa"
+    ],
+    "temperos": [
+      "Pimenta Calabresa",
+      "Cebola",
+      "Orégano",
+      "Cheiro Verde"
+    ],
+    "adicional": [
+      "Bacon",
+      "Calabresa",
+      "Frango",
+      "Mussarela",
+      "Milho"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Massa na Chapa",
+    "description": "Espaguete com frango, milho, bacon, calabresa, mussarela, brócolis, repolho, cenoura e shoyu",
+    "price": 30.0,
+    "category": "massas"
+  },
+  {
+    "id": 22,
+    "name": "Hot Vessile",
+    "description": "Pão, salsicha, mussarela, bacon e calabresa, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
+    "price": 20.0,
+    "category": "lanches"
+  },
+  {
+    "id": 23,
+    "name": "Hot Sabor",
+    "description": "Pão, salsicha, molho vermelho, mussarela, tomate, batata palha, creme de alho e maionese temperada",
+    "price": 15.0,
+    "category": "lanches"
+  },
+  {
+    "id": 24,
+    "name": "Hot Mania",
+    "description": "Pão, salsicha, mussarela, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
+    "price": 18.0,
+    "category": "lanches"
+  },
+  {
+    "id": 25,
+    "name": "Hot Venida",
+    "description": "Pão, salsicha, mussarela, bolonhesa, milho, batata palha, creme de alho e maionese temperada",
+    "price": 18.0,
+    "category": "lanches"
+  },
+  {
+    "id": 26,
+    "name": "Hot Espress",
+    "description": "Pão, salsicha, mussarela, bolonhesa, purê de batata, tomate, milho, batata palha, creme de alho e maionese temperada",
+    "price": 20.0,
+    "category": "lanches"
+  },
+  {
+    "id": 27,
+    "name": "Hot JR",
+    "description": "Pão, kafta, molho vermelho, tomate, cenoura, milho, mussarela, batata palha e maionese temperada",
+    "price": 15.0,
+    "category": "lanches"
   }
 ]
