@@ -69,7 +69,7 @@
     "description": "Almôndega (400g) acompanhada com uma deliciosa mandioca cozida",
     "price": 55.0,
     "category": "porções",
-    "image": ""
+    "image": "/images/menu/almondegaMandioca.jpg"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "description": "Isca de filé em tiras (400g) empanadas, ao molho vermelho com tomates em cubo e mussarela",
     "price": 85.0,
     "category": "porções",
-    "image": ""
+    "image": "/images/menu/parmegiana.jpg"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "description": "Figado (400g) com jiló em rodelas",
     "price": 50.0,
     "category": "porções",
-    "image": ""
+    "image": "/images/menu/carneJilo.png"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "description": "Cupim suculento desfiado (400g) com batata rústica (200g) e mussarela, acompanhado de um delicioso molho",
     "price": 65.0,
     "category": "porções",
-    "image": ""
+    "image": "/images/menu/cumpimDesfiado.png"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "description": "Calabresa (200g) com muita cebola",
     "price": 35.0,
     "category": "porções",
-    "image": ""
+    "image": "/images/menu/calabresaAcebolada.png"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "description": "Delicioso disquinho de costela (400g) recheado com cheeder cremoso e servido com molho Vessile",
     "price": 50.0,
     "category": "porções",
-    "image": ""
+    "image": "images/menu/discoCostela.png"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "description": "Tomate, pepino, salame, provolone, mussarela, presunto, ovo de cordona, azeitona, palmito",
     "price": 50.0,
     "category": "porções",
-    "image": ""
+    "image": "images/menu/tabuaVessile.jpg"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "description": "Bacon, calabresa, mussarela, ovo de cordona, torresmo, torrada e cheiro verde",
     "price": 15.0,
     "category": "caldos",
-    "image": ""
+    "image": "images/menu/caldoFeijao.png"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "description": "Frango, bacon, calabresa, mussarela, ovo de codorna, torresmo, torrada e cheiro verde",
     "price": 15.0,
     "category": "caldos",
-    "image": ""
+    "image": "images/menu/caldoMandioca.png"
   },
   {
     "id": 20,
