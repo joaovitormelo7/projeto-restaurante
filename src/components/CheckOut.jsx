@@ -70,7 +70,7 @@ ${pedido}
 *Endereço:* ${endereco}
     `);
 
-    window.location.href = `https://wa.me/34991623892?text=${mensagem}`;
+    window.location.href = `https://wa.me/(34)991623892?text=${mensagem}`;
   };
 
   return (

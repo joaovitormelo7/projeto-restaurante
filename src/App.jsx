@@ -4,7 +4,7 @@ import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
-import CartPage from "./components/CartPage";
+import CartPage from "./pages/CartPage";
 import CartIcon from "./components/CartIcon";
 import PaginaContato from "./pages/PaginaContato";
 import { useState } from "react";

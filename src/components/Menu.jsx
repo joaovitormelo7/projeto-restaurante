@@ -57,6 +57,15 @@ const Button = styled.button`
   }
 `;
 
+const CardImage = styled.img`
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+`;
+
+
 const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
 const Menu = ({ addToCart }) => {
@@ -87,6 +96,7 @@ const Menu = ({ addToCart }) => {
       <CardContainer>
         {filteredItems.map((item) => (
           <Card key={item.id}>
+            <CardImage src={item.image} alt= {item.name} />
             <h3>{item.name}</h3>
             <p>{item.description}</p>
             <p>

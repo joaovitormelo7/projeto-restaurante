@@ -20,6 +20,7 @@ const CartButton = styled.button`
   }
 `;
 
+//Fix botão de carrinho
 const CartIcon = ({ cartItems }) => {
   const navigate = useNavigate();
 

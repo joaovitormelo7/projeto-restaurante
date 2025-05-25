@@ -4,119 +4,136 @@
     "name": "Filé de tilápia",
     "description": "Filé de tilápia (400g)",
     "price": 45.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/fileTilapia.jpg"
   },
   {
     "id": 2,
     "name": "Filé de tilápia c/ Fritas",
     "description": "Filé de tilápia (400g) com fritas (400g)",
     "price": 70.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/fritasTilapia.jpg"
   },
   {
     "id": 3,
     "name": "Bolinho de tilápia",
     "description": "Bolinho de tilápia (15 unid)",
     "price": 25.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/bolinhoTilapia.jpg"
   },
   {
     "id": 4,
     "name": "Ceviche",
     "description": "Filé de tilápia (200g) com cebola roxa, tomate, acabaxi e cheiro verde",
     "price": 30.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/ceviche.jpg"
   },
   {
     "id": 5,
     "name": "Fritas Completa",
     "description": "Batata (400g), bacon e mussarela",
     "price": 35.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/fritasCompletas.jpg"
   },
   {
     "id": 6,
     "name": "Fritas Vessile",
     "description": "Batata crinkle (400g), com cupim desfiado e molho especial da casa",
     "price": 70.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/fritasVessile.jpg"
   },
   {
     "id": 7,
     "name": "Contra filé c/ mandioca",
     "description": "Contra filé (400g) com uma deliciosa mandioca, acompanhado de um delicioso vinagrete e molho",
     "price": 70.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/contraMandioca.jpg"
   },
   {
     "id": 8,
     "name": "Contra filé c/ fritas",
     "description": "Contra filé (400g) com fritas, acompanhado de um delicioso molho da casa",
     "price": 70.0,
-    "category": "porções"
+    "category": "porções",
+    "image": "/images/menu/contraFritas.png"
   },
   {
     "id": 9,
     "name": "Almôndega com Mandioca",
     "description": "Almôndega (400g) acompanhada com uma deliciosa mandioca cozida",
     "price": 55.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 10,
     "name": "Parmegiana",
     "description": "Isca de filé em tiras (400g) empanadas, ao molho vermelho com tomates em cubo e mussarela",
     "price": 85.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 11,
     "name": "Figado c/ jiló",
     "description": "Figado (400g) com jiló em rodelas",
     "price": 50.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 12,
     "name": "Vessile Especial",
     "description": "Cupim suculento desfiado (400g) com batata rústica (200g) e mussarela, acompanhado de um delicioso molho",
     "price": 65.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 13,
     "name": "Calabresa Acebolada",
     "description": "Calabresa (200g) com muita cebola",
     "price": 35.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 14,
     "name": "Disco de Costela com Cheedar",
     "description": "Delicioso disquinho de costela (400g) recheado com cheeder cremoso e servido com molho Vessile",
     "price": 50.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 15,
     "name": "Tábua Vessile",
     "description": "Tomate, pepino, salame, provolone, mussarela, presunto, ovo de cordona, azeitona, palmito",
     "price": 50.0,
-    "category": "porções"
+    "category": "porções",
+    "image": ""
   },
   {
     "id": 16,
     "name": "Feijão",
     "description": "Bacon, calabresa, mussarela, ovo de cordona, torresmo, torrada e cheiro verde",
     "price": 15.0,
-    "category": "caldos"
+    "category": "caldos",
+    "image": ""
   },
   {
     "id": 17,
     "name": "Mandioca",
     "description": "Frango, bacon, calabresa, mussarela, ovo de codorna, torresmo, torrada e cheiro verde",
     "price": 15.0,
-    "category": "caldos"
+    "category": "caldos",
+    "image": ""
   },
   {
     "id": 20,
@@ -163,48 +180,119 @@
     "name": "Massa na Chapa",
     "description": "Espaguete com frango, milho, bacon, calabresa, mussarela, brócolis, repolho, cenoura e shoyu",
     "price": 30.0,
-    "category": "massas"
+    "category": "massas",
+    "image": ""
   },
   {
     "id": 22,
     "name": "Hot Vessile",
     "description": "Pão, salsicha, mussarela, bacon e calabresa, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
   },
   {
     "id": 23,
     "name": "Hot Sabor",
     "description": "Pão, salsicha, molho vermelho, mussarela, tomate, batata palha, creme de alho e maionese temperada",
     "price": 15.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
   },
   {
     "id": 24,
     "name": "Hot Mania",
     "description": "Pão, salsicha, mussarela, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
   },
   {
     "id": 25,
     "name": "Hot Venida",
     "description": "Pão, salsicha, mussarela, bolonhesa, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
   },
   {
     "id": 26,
     "name": "Hot Espress",
     "description": "Pão, salsicha, mussarela, bolonhesa, purê de batata, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
   },
   {
     "id": 27,
     "name": "Hot JR",
     "description": "Pão, kafta, molho vermelho, tomate, cenoura, milho, mussarela, batata palha e maionese temperada",
     "price": 15.0,
-    "category": "lanches"
+    "category": "lanches",
+    "image": ""
+  },
+  {
+    "id": 28,
+    "name": "Coca-Cola 2L",
+    "description": "Refrigerante Coca-Cola 2 litros",
+    "price": 12.0,
+    "category": "bebidas",
+    "image": ""
+  },
+  {
+    "id": 29,
+    "name": "Guaraná Antártica 2L",
+    "description": "Refrigerante Guaraná Antártica 2 litros",
+    "price": 11.0,
+    "category": "bebidas",
+    "image": ""
+  },
+  {
+    "id": 30,
+    "name": "Água sem gás",
+    "description": "Garrafa de água mineral sem gás 500ml",
+    "price": 3.0,
+    "category": "bebidas",
+    "image": ""
+  },
+  {
+    "id": 31,
+    "name": "Água com gás",
+    "description": "Garrafa de água mineral com gás 500ml",
+    "price": 3.5,
+    "category": "bebidas",
+    "image": ""
+  },
+  {
+    "id": 32,
+    "name": "Suco natural de laranja",
+    "description": "Copo de suco natural de laranja 300ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": ""
+  },
+  {
+    "id": 33,
+    "name": "Petit Gateau",
+    "description": "Petit Gateau com bola de sorvete",
+    "price": 18.0,
+    "category": "sobremesas",
+    "image": ""
+  },
+  {
+    "id": 34,
+    "name": "Sorvete de creme",
+    "description": "Taça com 2 bolas de sorvete de creme",
+    "price": 10.0,
+    "category": "sobremesas",
+    "image": ""
+  },
+  {
+    "id": 35,
+    "name": "Combo Família",
+    "description": "Tilápia, batata frita, arroz e refrigerante 2L",
+    "price": 120.0,
+    "category": "combos",
+    "image": ""
   }
 ]
