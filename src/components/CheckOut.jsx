@@ -1,4 +1,4 @@
-// src/pages/CheckoutPage.jsx
+// File: src/components/CheckOut.jsx
 import styled from "styled-components";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

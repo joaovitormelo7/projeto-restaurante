@@ -151,7 +151,7 @@ ${itens}
 📝 *Observações:* ${observacao || "Nenhuma"}
     `);
 
-    window.location.href = `https://wa.me/(34)991623892?text=${mensagem}`;
+    window.location.href = /* API WPP */ 
   };
 
   return (
