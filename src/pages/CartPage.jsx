@@ -143,7 +143,6 @@ ${itens}
 
 💵 *Total:* R$ ${total}
 🚚 *Frete:* Grátis
-
 🙋 *Nome:* ${nome}
 📞 *Telefone:* ${telefone}
 📍 *Endereço:* ${endereco}
@@ -151,7 +150,8 @@ ${itens}
 📝 *Observações:* ${observacao || "Nenhuma"}
     `);
 
-    window.location.href = /* API WPP */ 
+    window.location.href = `https://wa.me/5534991623892?text=${encodeURIComponent(mensagem)}`; 
+  
   };
 
   return (

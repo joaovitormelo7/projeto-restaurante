@@ -182,7 +182,7 @@
     "description": "Espaguete com frango, milho, bacon, calabresa, mussarela, brócolis, repolho, cenoura e shoyu",
     "price": 30.0,
     "category": "massas",
-    "image": ""
+    "image": "images/menu/massaNaChapa.png"
   },
   {
     "id": 22,
@@ -190,7 +190,7 @@
     "description": "Pão, salsicha, mussarela, bacon e calabresa, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotVessile.png"
   },
   {
     "id": 23,
@@ -198,7 +198,7 @@
     "description": "Pão, salsicha, molho vermelho, mussarela, tomate, batata palha, creme de alho e maionese temperada",
     "price": 15.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotSabor.png"
   },
   {
     "id": 24,
@@ -206,7 +206,7 @@
     "description": "Pão, salsicha, mussarela, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotMania.png"
   },
   {
     "id": 25,
@@ -214,7 +214,7 @@
     "description": "Pão, salsicha, mussarela, bolonhesa, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotVenida.png"
   },
   {
     "id": 26,
@@ -222,7 +222,7 @@
     "description": "Pão, salsicha, mussarela, bolonhesa, purê de batata, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotSpress.png"
   },
   {
     "id": 27,
@@ -230,7 +230,7 @@
     "description": "Pão, kafta, molho vermelho, tomate, cenoura, milho, mussarela, batata palha e maionese temperada",
     "price": 15.0,
     "category": "lanches",
-    "image": ""
+    "image": "images/menu/hotJR.png"
   },
   {
     "id": 28,
@@ -238,7 +238,7 @@
     "description": "Refrigerante Coca-Cola 2 litros",
     "price": 12.0,
     "category": "bebidas",
-    "image": ""
+    "image": "images/menu/cocaCola2litros.png"
   },
   {
     "id": 29,
@@ -246,7 +246,7 @@
     "description": "Refrigerante Guaraná Antártica 2 litros",
     "price": 11.0,
     "category": "bebidas",
-    "image": ""
+    "image": "images/menu/guaranaAntartica.png"
   },
   {
     "id": 30,
@@ -254,7 +254,7 @@
     "description": "Garrafa de água mineral sem gás 500ml",
     "price": 3.0,
     "category": "bebidas",
-    "image": ""
+    "image": "images/menu/aguaSemGas.png"
   },
   {
     "id": 31,
@@ -262,7 +262,7 @@
     "description": "Garrafa de água mineral com gás 500ml",
     "price": 3.5,
     "category": "bebidas",
-    "image": ""
+    "image": "images/menu/aguaComGas.png"
   },
   {
     "id": 32,
@@ -270,23 +270,7 @@
     "description": "Copo de suco natural de laranja 300ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": ""
-  },
-  {
-    "id": 33,
-    "name": "Petit Gateau",
-    "description": "Petit Gateau com bola de sorvete",
-    "price": 18.0,
-    "category": "sobremesas",
-    "image": ""
-  },
-  {
-    "id": 34,
-    "name": "Sorvete de creme",
-    "description": "Taça com 2 bolas de sorvete de creme",
-    "price": 10.0,
-    "category": "sobremesas",
-    "image": ""
+    "image": "images/menu/sucoLaranja.png"
   },
   {
     "id": 35,
@@ -294,6 +278,6 @@
     "description": "Tilápia, batata frita, arroz e refrigerante 2L",
     "price": 120.0,
     "category": "combos",
-    "image": ""
+    "image": "images/menu/comboFamilia.png"
   }
 ]

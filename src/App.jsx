@@ -4,10 +4,11 @@ import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
-import CartPage from "./pages/CartPage";
 import CartIcon from "./components/CartIcon";
 import PaginaContato from "./pages/PaginaContato";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
+
+const CartPage = lazy(() => import("./pages/CartPage"));
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -56,6 +57,7 @@ const App = () => {
       <GlobalStyles />
       <Header />
       <CartIcon cartItems={cartItems} />
+      <Suspense fallback={<div style={{ color: 'white', margin: '2rem' }}>Carregando página...</div>}></Suspense>
       <Routes>
         <Route
           path="/"
