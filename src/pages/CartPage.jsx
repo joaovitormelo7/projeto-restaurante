@@ -150,7 +150,7 @@ ${itens}
 📝 *Observações:* ${observacao || "Nenhuma"}
     `);
 
-    window.location.href = `https://wa.me/5534991623892?text=${encodeURIComponent(mensagem)}`; 
+    window.location.href = `https://wa.me/5534991623892?text=${(mensagem)}`; 
   
   };
 

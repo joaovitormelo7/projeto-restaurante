@@ -234,46 +234,262 @@
   },
   {
     "id": 28,
-    "name": "Coca-Cola 2L",
-    "description": "Refrigerante Coca-Cola 2 litros",
+    "name": "Coca-Cola 310ml",
+    "description": "Refrigerante Coca-Cola 310ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/cocaCola310ml.svg"
+  },
+  {
+    "id": 29,
+    "name": "Coca-Cola Zero 310ml",
+    "description": "Refrigerante Coca-Cola Zero 310ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/cocaColaZero310ml.jpg" 
+  },
+  {
+    "id": 30,
+    "name": "Fanta Laranja 310ml",
+    "description": "Refrigerante Fanta Laranja 310ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/fantaLaranja310ml.png"
+  },
+  {
+    "id": 31,
+    "name": "Sprite 310ml",
+    "description": "Refrigerante Sprite 310ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/sprite310ml.png"
+  },
+  {
+    "id": 32,
+    "name": "Guaraná Antártica 310ml",
+    "description": "Refrigerante Guaraná Antártica 310ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/guaranaAntartica310ml.png"
+  },
+  {
+    "id": 33,
+    "name": "Pepsi 350ml",
+    "description": "Refrigerante Pepsi 350ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/pepsi350ml.jpg" 
+  },
+  {
+    "id": 34,
+    "name": "Água tônica 310ml",
+    "description": "Água tônica 310ml",
+    "price": 7.0,
+    "category": "bebidas",
+    "image": "images/menu/aguaTonica350ml.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Água 500ml",
+    "description": "Água mineral 500ml",
+    "price": 3.50,
+    "category": "bebidas",
+    "image": "images/menu/"
+  },
+  {
+    "id": 36,
+    "name": "Água com gás 500ml",
+    "description": "Água com gás 500ml",
+    "price": 4.50,
+    "category": "bebidas",
+    "image": "images/menu/"
+  },
+  {
+    "id": 37,
+    "name": "Água de coco 200ml",
+    "description": "Água de coco 200ml",
+    "price": 6.0,
+    "category": "bebidas",
+    "image": "images/menu/aguaDeCoco.svg"
+  },
+  {
+    "id": 38,
+    "name": "H20 500ml",
+    "description": "H20",
+    "price": 8.0,
+    "category": "bebidas",
+    "image": "images/menu/h20.png"
+  },
+  {
+    "id": 39,
+    "name": "Sprite Lemon Fresh 510ml",
+    "description": "Refrigerante Sprite Lemon Fresh 510ml",
+    "price": 8.0,
+    "category": "bebidas",
+    "image": "images/menu/spriteLemonFresh510ml.png"
+  },
+  {
+    "id": 40,
+    "name": "Red Bull 250ml",
+    "description": "Red Bull 250ml",
     "price": 12.0,
+    "category": "bebidas",
+    "image": "images/menu/redBull250ml.png"
+  },
+  {
+    "id": 41,
+    "name": "Coca-Cola 1L",
+    "description": "Refrigerante Coca-Cola 1L",
+    "price": 8.0,
+    "category": "bebidas",
+    "image": "images/menu/cocaCola1L.png"
+  },
+  {
+    "id": 42,
+    "name": "Coca-Cola 2L",
+    "description": "Refrigerante Coca-Cola 2L",
+    "price": 13.0,
     "category": "bebidas",
     "image": "images/menu/cocaCola2litros.png"
   },
   {
-    "id": 29,
-    "name": "Guaraná Antártica 2L",
-    "description": "Refrigerante Guaraná Antártica 2 litros",
-    "price": 11.0,
-    "category": "bebidas",
-    "image": "images/menu/guaranaAntartica.png"
-  },
-  {
-    "id": 30,
-    "name": "Água sem gás",
-    "description": "Garrafa de água mineral sem gás 500ml",
-    "price": 3.0,
-    "category": "bebidas",
-    "image": "images/menu/aguaSemGas.png"
-  },
-  {
-    "id": 31,
-    "name": "Água com gás",
-    "description": "Garrafa de água mineral com gás 500ml",
-    "price": 3.5,
-    "category": "bebidas",
-    "image": "images/menu/aguaComGas.png"
-  },
-  {
-    "id": 32,
-    "name": "Suco natural de laranja",
-    "description": "Copo de suco natural de laranja 300ml",
+    "id": 43,
+    "name": "Dell vale 290ml",
+    "description": "Dell vale lata 290ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/sucoLaranja.png"
+    "image": "images/menu/dellVale290ml.png"
   },
   {
-    "id": 35,
+    "id": 44,
+    "name": "Kapo",
+    "description": "Kapo lata 290ml",
+    "price": 4.0,
+    "category": "bebidas",
+    "image": "images/menu/kapo290ml.png"
+  },
+  {
+    "id": 45,
+    "name": "Laranja Natural 310ml",
+    "description": "Laranja Natural 310ml",
+    "price": 10.0,
+    "category": "bebidas",
+    "image": "images/menu/sucoLaranja.svg"
+  },
+  {
+    "id": 46,
+    "name": "Laranja com morango",
+    "description": "Laranja com morango copo",
+    "price": 14.0,
+    "category": "bebidas",
+    "image": "images/menu/laranjaMorango.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Limonada Suiça",
+    "description": "Limonada Suiça copo",
+    "price": 14.0,
+    "category": "bebidas",
+    "image": "images/menu/limonadaSuica.png"
+  },
+  {
+    "id": 49,
+    "name": "Cerveja Heineken",
+    "description": "Cerveja Heineken 600ml",
+    "price": 16.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/heineken600ml.png"
+  },
+  {
+    "id": 50,
+    "name": "Cerveja Heineken Long Neck",
+    "description": "Cerveja Heineken 330ml",
+    "price": 10.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/heineken330ml.png"
+  },
+  {
+    "id": 51,
+    "name": "Cerveja Skol 600ml",
+    "description": "Cerveja Skol garrafa 600ml",
+    "price": 12.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/skol600ml.png"
+  },
+  {
+    "id": 52,
+    "name": "Cerveja Brahma 600ml",
+    "description": "Cerveja Brahma garrafa 600ml",
+    "price": 12.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/brahma600ml.png"
+  },
+  {
+    "id": 53,
+    "name": "Cerveja Amstel 600ml",
+    "description": "Cerveja Amstel garrafa 600ml",
+    "price": 14.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/amstel600ml.png"
+  },
+  {
+    "id": 54,
+    "name": "Cerveja Original 600ml",
+    "description": "Cerveja Original garrafa 600ml",
+    "price": 14.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/original600ml.png"
+  },
+  {
+    "id": 55,
+    "name": "Cerveja Heineken 0.0 Long Neck",
+    "description": "Cerveja Heineken 0.0 sem álcool 330ml",
+    "price": 10.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/heineken00LongNeck.png"
+  },
+  {
+    "id": 56,
+    "name": "Cerveja Corona Long Neck",
+    "description": "Cerveja Corona 330ml",
+    "price": 10.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/coronaLongNeck.png"
+  },
+  {
+    "id": 57,
+    "name": "Cerveja Budweiser Long Neck",
+    "description": "Cerveja Budweiser 330ml",
+    "price": 8.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/budweiserLongNeck.png"
+  },
+  {
+    "id": 58,
+    "name": "Skol Beats Long Neck",
+    "description": "Cerveja Skol Beats 330ml",
+    "price": 12.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/skolBeatsLongNeck.png"
+  },
+  {
+    "id": 59,
+    "name": "Cerveja Brahma Lata 350ml",
+    "description": "Cerveja Brahma lata 350ml",
+    "price": 6.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/brahmaLata350ml.png"
+  },
+  {
+    "id": 60,
+    "name": "Cerveja Skol Lata 350ml",
+    "description": "Cerveja Skol lata 350ml",
+    "price": 6.0,
+    "category": "bebidas-alcoolicas",
+    "image": "images/menu/skolLata350ml.png"
+  },
+  {
+    "id": 61,
     "name": "Combo Família",
     "description": "Tilápia, batata frita, arroz e refrigerante 2L",
     "price": 120.0,
