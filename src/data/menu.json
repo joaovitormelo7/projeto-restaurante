@@ -61,7 +61,7 @@
     "description": "Contra filé (400g) com fritas, acompanhado de um delicioso molho da casa",
     "price": 70.0,
     "category": "porções",
-    "image": "/images/menu/contraFritas.png"
+    "image": "/images/menu/contraFritas.jpg"
   },
   {
     "id": 9,
@@ -85,7 +85,7 @@
     "description": "Figado (400g) com jiló em rodelas",
     "price": 50.0,
     "category": "porções",
-    "image": "/images/menu/carneJilo.png"
+    "image": "/images/menu/figadoComJilo.jpg"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "description": "Cupim suculento desfiado (400g) com batata rústica (200g) e mussarela, acompanhado de um delicioso molho",
     "price": 65.0,
     "category": "porções",
-    "image": "/images/menu/cumpimDesfiado.png"
+    "image": "/images/menu/cumpimDesfiado.jpg"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "description": "Calabresa (200g) com muita cebola",
     "price": 35.0,
     "category": "porções",
-    "image": "/images/menu/calabresaAcebolada.png"
+    "image": "/images/menu/calabresaAcebolada.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "description": "Delicioso disquinho de costela (400g) recheado com cheeder cremoso e servido com molho Vessile",
     "price": 50.0,
     "category": "porções",
-    "image": "images/menu/discoCostela.png"
+    "image": "images/menu/discoCostela.jpg"
   },
   {
     "id": 15,
@@ -125,7 +125,7 @@
     "description": "Bacon, calabresa, mussarela, ovo de cordona, torresmo, torrada e cheiro verde",
     "price": 15.0,
     "category": "caldos",
-    "image": "images/menu/caldoFeijao.png"
+    "image": "images/menu/caldoFeijao.jpg"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "description": "Frango, bacon, calabresa, mussarela, ovo de codorna, torresmo, torrada e cheiro verde",
     "price": 15.0,
     "category": "caldos",
-    "image": "images/menu/caldoMandioca.png"
+    "image": "images/menu/caldoMandioca.jpg"
   },
   {
     "id": 20,
@@ -174,7 +174,7 @@
       "Mussarela",
       "Milho"
     ],
-    "image": "images/menu/monteSuaMassa.png"
+    "image": "images/menu/monteSuaMassa.jpg"
   },
   {
     "id": 21,
@@ -182,7 +182,7 @@
     "description": "Espaguete com frango, milho, bacon, calabresa, mussarela, brócolis, repolho, cenoura e shoyu",
     "price": 30.0,
     "category": "massas",
-    "image": "images/menu/massaNaChapa.png"
+    "image": "images/menu/massaNaChapa.jpg"
   },
   {
     "id": 22,
@@ -190,7 +190,7 @@
     "description": "Pão, salsicha, mussarela, bacon e calabresa, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
     "category": "lanches",
-    "image": "images/menu/hotVessile.png"
+    "image": "images/menu/hotVessile.jpg"
   },
   {
     "id": 23,
@@ -198,7 +198,7 @@
     "description": "Pão, salsicha, molho vermelho, mussarela, tomate, batata palha, creme de alho e maionese temperada",
     "price": 15.0,
     "category": "lanches",
-    "image": "images/menu/hotSabor.png"
+    "image": "images/menu/hotSabor.jpg"
   },
   {
     "id": 24,
@@ -206,7 +206,7 @@
     "description": "Pão, salsicha, mussarela, strogonoff de frango, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
     "category": "lanches",
-    "image": "images/menu/hotMania.png"
+    "image": "images/menu/hotMania.jpg"
   },
   {
     "id": 25,
@@ -214,7 +214,7 @@
     "description": "Pão, salsicha, mussarela, bolonhesa, milho, batata palha, creme de alho e maionese temperada",
     "price": 18.0,
     "category": "lanches",
-    "image": "images/menu/hotVenida.png"
+    "image": "images/menu/hotVenida.jpg"
   },
   {
     "id": 26,
@@ -222,7 +222,7 @@
     "description": "Pão, salsicha, mussarela, bolonhesa, purê de batata, tomate, milho, batata palha, creme de alho e maionese temperada",
     "price": 20.0,
     "category": "lanches",
-    "image": "images/menu/hotSpress.png"
+    "image": "images/menu/hotSpress.jpg"
   },
   {
     "id": 27,
@@ -230,7 +230,7 @@
     "description": "Pão, kafta, molho vermelho, tomate, cenoura, milho, mussarela, batata palha e maionese temperada",
     "price": 15.0,
     "category": "lanches",
-    "image": "images/menu/hotJR.png"
+    "image": "images/menu/hotJR.jpg"
   },
   {
     "id": 28,
@@ -238,7 +238,7 @@
     "description": "Refrigerante Coca-Cola 310ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/cocaCola310ml.svg"
+    "image": "images/menu/cocaLata310ml.jpg"
   },
   {
     "id": 29,
@@ -254,7 +254,7 @@
     "description": "Refrigerante Fanta Laranja 310ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/fantaLaranja310ml.png"
+    "image": "images/menu/fantaLaranja310ml.jpg"
   },
   {
     "id": 31,
@@ -262,7 +262,7 @@
     "description": "Refrigerante Sprite 310ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/sprite310ml.png"
+    "image": "images/menu/sprite310ml.jpg"
   },
   {
     "id": 32,
@@ -270,7 +270,7 @@
     "description": "Refrigerante Guaraná Antártica 310ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/guaranaAntartica310ml.png"
+    "image": "images/menu/guaranaAntartica310ml.jpg"
   },
   {
     "id": 33,
@@ -294,7 +294,7 @@
     "description": "Água mineral 500ml",
     "price": 3.50,
     "category": "bebidas",
-    "image": "images/menu/"
+    "image": "images/menu/aguaMineral.jpg"
   },
   {
     "id": 36,
@@ -302,7 +302,7 @@
     "description": "Água com gás 500ml",
     "price": 4.50,
     "category": "bebidas",
-    "image": "images/menu/"
+    "image": "images/menu/aguaComGas.jpg" 
   },
   {
     "id": 37,
@@ -318,7 +318,7 @@
     "description": "H20",
     "price": 8.0,
     "category": "bebidas",
-    "image": "images/menu/h20.png"
+    "image": "images/menu/h2o.jpg"
   },
   {
     "id": 39,
@@ -326,7 +326,7 @@
     "description": "Refrigerante Sprite Lemon Fresh 510ml",
     "price": 8.0,
     "category": "bebidas",
-    "image": "images/menu/spriteLemonFresh510ml.png"
+    "image": "images/menu/spriteLemonFresh.jpg"
   },
   {
     "id": 40,
@@ -334,7 +334,7 @@
     "description": "Red Bull 250ml",
     "price": 12.0,
     "category": "bebidas",
-    "image": "images/menu/redBull250ml.png"
+    "image": "images/menu/redBull.jpg"
   },
   {
     "id": 41,
@@ -342,7 +342,7 @@
     "description": "Refrigerante Coca-Cola 1L",
     "price": 8.0,
     "category": "bebidas",
-    "image": "images/menu/cocaCola1L.png"
+    "image": "images/menu/cocaCola.jpg"
   },
   {
     "id": 42,
@@ -350,7 +350,7 @@
     "description": "Refrigerante Coca-Cola 2L",
     "price": 13.0,
     "category": "bebidas",
-    "image": "images/menu/cocaCola2litros.png"
+    "image": "images/menu/cocaCola.jpg"
   },
   {
     "id": 43,
@@ -358,7 +358,7 @@
     "description": "Dell vale lata 290ml",
     "price": 6.0,
     "category": "bebidas",
-    "image": "images/menu/dellVale290ml.png"
+    "image": "images/menu/dellVale.jpg"
   },
   {
     "id": 44,
@@ -366,7 +366,7 @@
     "description": "Kapo lata 290ml",
     "price": 4.0,
     "category": "bebidas",
-    "image": "images/menu/kapo290ml.png"
+    "image": "images/menu/kapo.jpg"
   },
   {
     "id": 45,
@@ -390,7 +390,7 @@
     "description": "Limonada Suiça copo",
     "price": 14.0,
     "category": "bebidas",
-    "image": "images/menu/limonadaSuica.png"
+    "image": "images/menu/limonadaSuiça.jpg"
   },
   {
     "id": 49,
@@ -398,7 +398,7 @@
     "description": "Cerveja Heineken 600ml",
     "price": 16.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/heineken600ml.png"
+    "image": "images/menu/heinekenGarrafa.jpg"
   },
   {
     "id": 50,
@@ -406,7 +406,7 @@
     "description": "Cerveja Heineken 330ml",
     "price": 10.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/heineken330ml.png"
+    "image": "images/menu/heinekenLongNeck.jpg"
   },
   {
     "id": 51,
@@ -414,7 +414,7 @@
     "description": "Cerveja Skol garrafa 600ml",
     "price": 12.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/skol600ml.png"
+    "image": "images/menu/skol600ml.jpg"
   },
   {
     "id": 52,
@@ -422,7 +422,7 @@
     "description": "Cerveja Brahma garrafa 600ml",
     "price": 12.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/brahma600ml.png"
+    "image": "images/menu/brahmaGarrafa.jpg"
   },
   {
     "id": 53,
@@ -430,7 +430,7 @@
     "description": "Cerveja Amstel garrafa 600ml",
     "price": 14.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/amstel600ml.png"
+    "image": "images/menu/amstel600ml.jpg"
   },
   {
     "id": 54,
@@ -438,7 +438,7 @@
     "description": "Cerveja Original garrafa 600ml",
     "price": 14.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/original600ml.png"
+    "image": "images/menu/original600ml.jpg"
   },
   {
     "id": 55,
@@ -446,7 +446,7 @@
     "description": "Cerveja Heineken 0.0 sem álcool 330ml",
     "price": 10.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/heineken00LongNeck.png"
+    "image": "images/menu/heinekenZero.jpg"
   },
   {
     "id": 56,
@@ -454,7 +454,7 @@
     "description": "Cerveja Corona 330ml",
     "price": 10.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/coronaLongNeck.png"
+    "image": "images/menu/coronaLong.jpg"
   },
   {
     "id": 57,
@@ -462,7 +462,7 @@
     "description": "Cerveja Budweiser 330ml",
     "price": 8.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/budweiserLongNeck.png"
+    "image": "images/menu/budweiserLong.jpg"
   },
   {
     "id": 58,
@@ -470,7 +470,7 @@
     "description": "Cerveja Skol Beats 330ml",
     "price": 12.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/skolBeatsLongNeck.png"
+    "image": "images/menu/skolBeatsLong.jpg"
   },
   {
     "id": 59,
@@ -478,7 +478,7 @@
     "description": "Cerveja Brahma lata 350ml",
     "price": 6.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/brahmaLata350ml.png"
+    "image": "images/menu/brahmaLata350ml.jpg"
   },
   {
     "id": 60,
@@ -486,7 +486,7 @@
     "description": "Cerveja Skol lata 350ml",
     "price": 6.0,
     "category": "bebidas-alcoolicas",
-    "image": "images/menu/skolLata350ml.png"
+    "image": "images/menu/cervejaSkolLata350ml.jpg"
   },
   {
     "id": 61,
@@ -494,6 +494,6 @@
     "description": "Tilápia, batata frita, arroz e refrigerante 2L",
     "price": 120.0,
     "category": "combos",
-    "image": "images/menu/comboFamilia.png"
+    "image": "images/menu/comboFamilia.jpg"
   }
 ]
