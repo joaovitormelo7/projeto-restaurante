@@ -7,10 +7,13 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
   }
 
   html, body {
-    width: 100vw;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
     height: 100%;
     font-family: 'Outfit', sans-serif;
     background-color: #ffffff;
@@ -22,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
+
   }
 
   ul {

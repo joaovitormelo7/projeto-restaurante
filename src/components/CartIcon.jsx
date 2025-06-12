@@ -16,7 +16,7 @@ const CartButton = styled.button`
   z-index: 999;
 
   &:hover {
-    background: #e64a19;
+    background: #444444;
   }
 `;
 
