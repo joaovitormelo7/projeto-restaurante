@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { useState } from "react";
 
 const Page = styled.div`
-  background: #f5f5f5;
   color: #f5f5f5;
   min-height: 100vh;
   padding: 40px 5% 120px;
@@ -77,7 +76,6 @@ const TextArea = styled.textarea`
   min-height: 80px;
 `;
 
-
 const Select = styled.select`
   width: 100%;
   padding: 10px;
@@ -110,6 +108,7 @@ const Empty = styled.p`
   color: #999;
   font-size: 14px;
 `;
+
 const CartPage = ({ cartItems }) => {
   const [nome, setNome] = useState("");
   const [telefone, setTelefone] = useState("");
@@ -117,10 +116,9 @@ const CartPage = ({ cartItems }) => {
   const [pagamento, setPagamento] = useState("Dinheiro");
   const [observacao, setObservacao] = useState("");
 
-  const total = cartItems.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
-  ).toFixed(2);
+  const total = cartItems
+    .reduce((acc, item) => acc + item.price * item.quantity, 0)
+    .toFixed(2);
 
   const handleSend = () => {
     if (!nome || !telefone || !endereco) {
@@ -129,11 +127,13 @@ const CartPage = ({ cartItems }) => {
     }
 
     const itens = cartItems
-      .map(
-        (item) =>
-          `- ${item.name} (x${item.quantity}): R$ ${(item.price * item.quantity).toFixed(2)}`
-      )
-      .join("\n");
+      .map((item) => {
+        const descricao = item.description
+          ? `\n  ${item.description.replace(/\n/g, "\n  ")}`
+          : "";
+        return `- ${item.name} (x${item.quantity}): R$ ${(item.price * item.quantity).toFixed(2)}${descricao}`;
+      })
+      .join("\n\n");
 
     const mensagem = encodeURIComponent(`
 🍔 *Pedido Vessile Lanches*
@@ -150,8 +150,7 @@ ${itens}
 📝 *Observações:* ${observacao || "Nenhuma"}
     `);
 
-    window.location.href = `https://wa.me/5534991623892?text=${(mensagem)}`; 
-  
+    window.location.href = `https://wa.me/5534991623892?text=${mensagem}`;
   };
 
   return (
@@ -163,9 +162,40 @@ ${itens}
         ) : (
           <>
             {cartItems.map((item, index) => (
-              <Item key={index}>
-                <span>{item.name} (x{item.quantity})</span>
-                <span>R$ {(item.price * item.quantity).toFixed(2)}</span>
+              <Item
+                key={index}
+                style={{
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  gap: "4px",
+                }}
+              >
+                <div style={{ fontWeight: "bold", color: "#fff" }}>
+                  {item.name} (x{item.quantity})
+                </div>
+
+                {item.description && (
+                  <div
+                    style={{
+                      whiteSpace: "pre-wrap",
+                      color: "#ccc",
+                      fontSize: "13px",
+                    }}
+                  >
+                    {item.description}
+                  </div>
+                )}
+
+                <div
+                  style={{
+                    marginTop: "6px",
+                    alignSelf: "flex-end",
+                    color: "#fff",
+                    fontWeight: "bold",
+                  }}
+                >
+                  R$ {(item.price * item.quantity).toFixed(2)}
+                </div>
               </Item>
             ))}
             <Total>Total: R$ {total}</Total>
