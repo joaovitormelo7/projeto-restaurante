@@ -29,11 +29,10 @@ const Title = styled.h2`
 `;
 
 const Item = styled.div`
-  display: flex;
-  justify-content: space-between;
   padding: 8px 0;
   border-bottom: 1px solid #333;
   font-size: 14px;
+  color: #fff;
 `;
 
 const Total = styled.div`
@@ -109,7 +108,7 @@ const Empty = styled.p`
   font-size: 14px;
 `;
 
-const CartPage = ({ cartItems }) => {
+const CartPage = ({ cartItems, onRemoveItem }) => {
   const [nome, setNome] = useState("");
   const [telefone, setTelefone] = useState("");
   const [endereco, setEndereco] = useState("");
@@ -135,8 +134,7 @@ const CartPage = ({ cartItems }) => {
       })
       .join("\n\n");
 
-    const mensagem = encodeURIComponent(`
-🍔 *Pedido Vessile Lanches*
+    const mensagem = encodeURIComponent(`🍔 *Pedido Vessile Lanches*
 
 🧾 *Itens:*
 ${itens}
@@ -147,8 +145,7 @@ ${itens}
 📞 *Telefone:* ${telefone}
 📍 *Endereço:* ${endereco}
 💳 *Pagamento:* ${pagamento}
-📝 *Observações:* ${observacao || "Nenhuma"}
-    `);
+📝 *Observações:* ${observacao || "Nenhuma"}`);
 
     window.location.href = `https://wa.me/5534991623892?text=${mensagem}`;
   };
@@ -162,16 +159,30 @@ ${itens}
         ) : (
           <>
             {cartItems.map((item, index) => (
-              <Item
-                key={index}
-                style={{
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  gap: "4px",
-                }}
-              >
-                <div style={{ fontWeight: "bold", color: "#fff" }}>
-                  {item.name} (x{item.quantity})
+              <Item key={index}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: "4px",
+                  }}
+                >
+                  <div>
+                    <strong>{item.name}</strong> (x{item.quantity})
+                  </div>
+                  <button
+                    onClick={() => onRemoveItem(item)}
+                    style={{
+                      background: "none",
+                      border: "none",
+                      color: "#ff4d4d",
+                      cursor: "pointer",
+                      fontSize: "13px",
+                    }}
+                  >
+                    Remover
+                  </button>
                 </div>
 
                 {item.description && (
@@ -189,7 +200,7 @@ ${itens}
                 <div
                   style={{
                     marginTop: "6px",
-                    alignSelf: "flex-end",
+                    textAlign: "right",
                     color: "#fff",
                     fontWeight: "bold",
                   }}

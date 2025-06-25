@@ -1,8 +1,10 @@
 import { styled } from "styled-components";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import GlobalStyles from "./components/GlobalStyles";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
+import LoginAdmin from "./pages/LoginAdmin";
+import AdminPage from "./pages/AdminPage";
 import Footer from "./components/Footer";
 import CartIcon from "./components/CartIcon";
 import PaginaContato from "./pages/PaginaContato";
@@ -151,6 +153,7 @@ const ModalBox = styled.div`
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [showMassaModal, setShowMassaModal] = useState(false);
   const [massaBaseItem, setMassaBaseItem] = useState(null);
   const [massaOptions, setMassaOptions] = useState({ massa: '', ingredientes: [], molho: '', temperos: [] });
@@ -171,6 +174,10 @@ const App = () => {
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
     }
   };
+
+  const handleRemoveItem = (itemToRemove) => {
+  setCartItems(prev => prev.filter(item => item.id !== itemToRemove.id));
+};
 
   return (
     <AppContainer>
@@ -196,7 +203,7 @@ const App = () => {
         />
         <Route
           path="/carrinho"
-          element={<CartPage cartItems={cartItems} />}
+          element={<CartPage cartItems={cartItems} onRemoveItem={handleRemoveItem} />}
         />
         <Route
           path="/contato"
@@ -208,7 +215,14 @@ const App = () => {
             </MainContainer>
           }
         />
-        <Route
+        <Route 
+          path="/admin-login"
+          element={<LoginAdmin setIsAdmin={setIsAdmin} />} />
+          <Route
+          path="/admin"
+          element={isAdmin ? <AdminPage /> : <Navigate to="/admin-login" />}
+          />
+          <Route
           path="*"
           element={
             <MainContainer>
