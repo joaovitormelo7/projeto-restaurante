@@ -92,7 +92,7 @@ const PaginaContato = () => {
         <Title>📞 Fale com a Gente</Title>
         <ContactList>
           <ContactItem>📱 Telefone: <a href="tel:+5534998291261">(34) 99829-1261</a></ContactItem>
-          <ContactItem>📸 Instagram: <a href="" target="_blank" rel="noopener noreferrer">@vessilelanches</a></ContactItem>
+          <ContactItem>📸 Instagram: <a href="https://www.instagram.com/vessilelanchesesabores?igsh=eGdqdzF6c2JiOGk0" target="_blank" rel="noopener noreferrer">@vessilelanches</a></ContactItem>
         </ContactList>
         <MapaContainer>
           <iframe
