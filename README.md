@@ -24,36 +24,18 @@ React Router DOM
 
 Vercel para deploy
 
-# 🧩 Estrutura do projeto
-css
-Copiar
-Editar
-/public
-  └── index.html
-/src
-  ├── assets/          # Imagens e fontes
-  ├── components/      # Componentes reutilizáveis (Header, Footer, etc.)
-  ├── pages/           # Páginas principais (Menu, Carrinho, Contato)
-  ├── data/            # Arquivos JSON (menu.json)
-  ├── App.jsx
-  ├── main.jsx
-package.json
-vite.config.js
-README.md
-🚀 Como rodar o projeto localmente
-bash
-Copiar
-Editar
-# Clone o repositório
+# 🚀 Como rodar o projeto localmente
+
+## Clone o repositório
 git clone
 
-# Acesse a pasta
+## Acesse a pasta
 cd easyorder
 
-# Instale as dependências
+## Instale as dependências
 npm install
 
-# Rode o servidor local
+## Rode o servidor local
 npm run dev
 O projeto estará disponível em http://localhost:5173/ (ou o que o Vite indicar).
 
