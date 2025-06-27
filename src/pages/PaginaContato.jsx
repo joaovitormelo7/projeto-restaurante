@@ -79,7 +79,7 @@ const PaginaContato = () => {
           O <Strong>Vessile Lanches e Sabores</Strong> nasceu em uma garagem com um sonho gigante: 
           levar até você lanches e refeições feitos com muito <Strong>carinho</Strong>, <Strong>dedicação</Strong> e <Strong>qualidade</Strong>.
           <br /><br />
-          Cada detalhe conta: desde o pão quentinho até a batata crocante e o atendimento acolhedor. 
+          Cada detalhe conta: desde a porção quentinha até a batata crocante e o atendimento acolhedor. 
           <br /><br />
           Somos pequenos no espaço, mas gigantes na vontade de oferecer o melhor lanche da sua vida.
           <br /><br />
