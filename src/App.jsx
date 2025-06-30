@@ -158,14 +158,26 @@ const App = () => {
   const [massaBaseItem, setMassaBaseItem] = useState(null);
   const [massaOptions, setMassaOptions] = useState({ massa: '', ingredientes: [], molho: '', temperos: [] });
 
+  const getTotalQuantity = () => cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
   const addToCart = (item) => {
+    if (getTotalQuantity() >= 200) {
+      alert("Você atingiu o limite máximo de 200 itens no carrinho.");
+      return;
+    }
+
     if (item.name === "Monte sua Massa") {
       setMassaBaseItem(item);
       setShowMassaModal(true);
       return;
     }
+
     const existingItem = cartItems.find((i) => i.id === item.id);
     if (existingItem) {
+      if (existingItem.quantity >= 10) {
+        alert("Limite de 10 unidades para este item.");
+        return;
+      }
       const updatedCart = cartItems.map((i) =>
         i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
       );
@@ -176,63 +188,64 @@ const App = () => {
   };
 
   const handleRemoveItem = (itemToRemove) => {
-  setCartItems(prev => prev.filter(item => item.id !== itemToRemove.id));
-};
+    setCartItems(prev => prev.filter(item => item.id !== itemToRemove.id));
+  };
 
   return (
     <AppContainer>
       <GlobalStyles />
       <Header />
       <CartIcon cartItems={cartItems} />
-      <Suspense fallback={<div style={{ color: 'white', margin: '2rem' }}>Carregando página...</div>} />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <MainContainer>
-              <Content>
-                <DecorativeBar />
-                <Title>Conheça nosso cardápio</Title>
-                <Description>
-                  Delícias preparadas com carinho esperando por você. Selecione seus itens preferidos e monte seu pedido com praticidade!
-                </Description>
-                <Menu addToCart={addToCart} />
-              </Content>
-            </MainContainer>
-          }
-        />
-        <Route
-          path="/carrinho"
-          element={<CartPage cartItems={cartItems} onRemoveItem={handleRemoveItem} />}
-        />
-        <Route
-          path="/contato"
-          element={
-            <MainContainer>
-              <Content>
-                <PaginaContato />
-              </Content>
-            </MainContainer>
-          }
-        />
-        <Route 
-          path="/admin-login"
-          element={<LoginAdmin setIsAdmin={setIsAdmin} />} />
+      <Suspense fallback={<div style={{ color: 'white', margin: '2rem' }}>Carregando página...</div>}>
+        <Routes>
           <Route
-          path="/admin"
-          element={isAdmin ? <AdminPage /> : <Navigate to="/admin-login" />}
+            path="/"
+            element={
+              <MainContainer>
+                <Content>
+                  <DecorativeBar />
+                  <Title>Conheça nosso cardápio</Title>
+                  <Description>
+                    Delícias preparadas com carinho esperando por você. Selecione seus itens preferidos e monte seu pedido com praticidade!
+                  </Description>
+                  <Menu addToCart={addToCart} />
+                </Content>
+              </MainContainer>
+            }
           />
           <Route
-          path="*"
-          element={
-            <MainContainer>
-              <Content>
-                <h1>Página não encontrada</h1>
-              </Content>
-            </MainContainer>
-          }
-        />
-      </Routes>
+            path="/carrinho"
+            element={<CartPage cartItems={cartItems} onRemoveItem={handleRemoveItem} />}
+          />
+          <Route
+            path="/contato"
+            element={
+              <MainContainer>
+                <Content>
+                  <PaginaContato />
+                </Content>
+              </MainContainer>
+            }
+          />
+          <Route 
+            path="/admin-login"
+            element={<LoginAdmin setIsAdmin={setIsAdmin} />} />
+          <Route
+            path="/admin"
+            element={isAdmin ? <AdminPage /> : <Navigate to="/admin-login" />}
+          />
+          <Route
+            path="*"
+            element={
+              <MainContainer>
+                <Content>
+                  <h1>Página não encontrada</h1>
+                </Content>
+              </MainContainer>
+            }
+          />
+        </Routes>
+      </Suspense>
       <Footer />
 
       {showMassaModal && massaBaseItem && (
@@ -296,8 +309,12 @@ const App = () => {
 
             <button
               onClick={() => {
+                if (getTotalQuantity() >= 200) {
+                  alert("Você atingiu o limite máximo de 200 itens no carrinho.");
+                  return;
+                }
                 const newItem = {
-                  id: Date.now(),
+                  id: `${massaBaseItem.id}-${Date.now()}`,
                   name: `${massaBaseItem.name} (${massaOptions.massa})`,
                   description: `Molho: ${massaOptions.molho}\nIngredientes: ${massaOptions.ingredientes.join(', ')}\nTemperos: ${massaOptions.temperos.join(', ')}`,
                   price: massaBaseItem.price,
